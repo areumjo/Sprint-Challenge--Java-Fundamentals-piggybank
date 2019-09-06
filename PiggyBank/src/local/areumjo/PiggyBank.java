@@ -22,7 +22,7 @@ public abstract class PiggyBank
 
     public double getWorth()
     {
-        return worth;
+        return worth * quantity;
     }
 
     public void setWorth(double worth)

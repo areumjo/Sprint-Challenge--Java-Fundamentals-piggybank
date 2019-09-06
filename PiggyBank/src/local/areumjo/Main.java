@@ -1,6 +1,7 @@
 package local.areumjo;
 
 import java.util.ArrayList;
+import java.text.DecimalFormat;
 
 public class Main {
 
@@ -30,5 +31,14 @@ public class Main {
         piggyBank.forEach(c -> System.out.println(c));
         System.out.println();
 
+        System.out.println("*** Print the value of the Piggy Bank ***");
+        double myValue = 0.0;
+        for (PiggyBank c : piggyBank)
+        {
+            myValue = myValue + c.getWorth();
+        }
+        DecimalFormat fp = new DecimalFormat("$###,###.00");
+        System.out.println("The piggy bank holds " + fp.format(myValue));
+        System.out.println();
     }
 }
