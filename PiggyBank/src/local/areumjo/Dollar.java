@@ -3,9 +3,6 @@ package local.areumjo;
 public class Dollar extends PiggyBank
 {
 
-    int quantity;
-    double worth;
-
     public Dollar(int quantity)
     {
         super(quantity);
@@ -14,6 +11,6 @@ public class Dollar extends PiggyBank
 
     @Override
     public String toString() {
-        return "Dollar{ " + "quantity= " + quantity + ", worth= $" + worth + " }";
+        return "$" + quantity;
     }
 }

@@ -3,9 +3,6 @@ package local.areumjo;
 public class Nickel extends PiggyBank
 {
 
-    int quantity;
-    double worth;
-
     public Nickel(int quantity)
     {
         super(quantity);
@@ -14,6 +11,6 @@ public class Nickel extends PiggyBank
 
     @Override
     public String toString() {
-        return "Nickel{ " + "quantity= " + quantity + ", worth= $" + worth + " }";
+        return quantity + " Nickels";
     }
 }

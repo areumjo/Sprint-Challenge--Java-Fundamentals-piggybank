@@ -3,9 +3,6 @@ package local.areumjo;
 public class Dime extends PiggyBank
 {
 
-    int quantity;
-    double worth;
-
     public Dime(int quantity)
     {
         super(quantity);
@@ -14,6 +11,12 @@ public class Dime extends PiggyBank
 
     @Override
     public String toString() {
-        return "Dime{ " + "quantity= " + quantity + ", worth= $" + worth + " }";
+        if (quantity == 1)
+        {
+            return quantity + " Dime";
+        } else
+        {
+            return quantity + " Dimes";
+        }
     }
 }
